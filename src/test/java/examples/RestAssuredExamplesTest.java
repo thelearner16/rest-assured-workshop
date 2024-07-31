@@ -43,7 +43,7 @@ public class RestAssuredExamplesTest {
     public void logAllRequestData() {
 
         given().
-            log().all().
+//            log().all().
         when().
             get("http://jsonplaceholder.typicode.com/users/1").
         then().
@@ -58,7 +58,7 @@ public class RestAssuredExamplesTest {
         when().
             get("http://jsonplaceholder.typicode.com/users/1").
         then().
-            log().all().
+//            log().all().
         and().
             assertThat().
             body("name", equalTo("Leanne Graham"));

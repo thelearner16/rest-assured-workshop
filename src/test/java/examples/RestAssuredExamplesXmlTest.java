@@ -17,6 +17,7 @@ public class RestAssuredExamplesXmlTest {
         when().
             get("http://path.to/cars/xml").
         then().
+//        	log().all().
             assertThat().
             body("cars.car[0].country", equalTo("Italy"));
     }
